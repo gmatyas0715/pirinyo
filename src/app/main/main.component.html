@@ -1,0 +1,31 @@
+<div class="main-container">
+    <div class="main-content">
+        <div class="carousel-container">
+            <div class="carousel-content">
+                <img id="cover-pic" [src]="carouselPicList[currentUrlIndex]" [ngClass]="{'visible':classVisible,'invisible':!classVisible}"/>
+                <button [disabled]="currentUrlIndex==0" mat-fab color="primary" id="arrow-left" (click)="previousPic()">
+                    <mat-icon>keyboard_arrow_left</mat-icon>
+                </button>
+                <button [disabled]="currentUrlIndex==carouselPicList.length-1" mat-fab color="primary" id="arrow-right" (click)="nextPic()">
+                    <mat-icon>keyboard_arrow_right</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div id="massages">
+            <h3 id="massages-title">Masszázsok</h3>
+            <mat-grid-list cols="4" rowHeight="300px">
+                @for (massage of massageTypes; track $index) {
+                <mat-grid-tile class="massage-block">
+                    <mat-card class="massage-card">
+                        <img [src]="massage.imgUrl">
+                        <span class="massage-name">{{massage.name}}</span>
+                        <button mat-button color="primary" routerLink='/masszazsok' [queryParams]="{tipus:massage.id}">Megnézem</button>
+                    </mat-card>
+                </mat-grid-tile>
+                }
+              </mat-grid-list>
+        </div>
+    </div>
+</div>

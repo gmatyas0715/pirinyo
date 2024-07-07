@@ -1,0 +1,44 @@
+.footer-list{
+    list-style-type: none;
+}
+
+.contact-info{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info mat-icon{
+    font-size: 18px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.contact-text{
+    margin-bottom: 7px;
+    margin-left: 7px;
+}
+
+.contact-header{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-icon{
+    height: 150px;
+}
+
+#footer-container{
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}

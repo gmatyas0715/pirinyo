@@ -1,0 +1,22 @@
+#massages-content{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 100px;
+    padding-top: 30px;
+}
+
+#massage-decription{
+    height: 800px;
+}
+
+.massages-list{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mat-mdc-chip-set-stacked{
+    padding-right: 200px;
+}

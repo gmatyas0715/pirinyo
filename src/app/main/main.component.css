@@ -1,0 +1,101 @@
+.main-container{
+  justify-content: center;
+}   
+
+.main-content{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.massage-block{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#massages{
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Merriweather", serif; 
+  font-weight: bold;
+}
+
+mat-card{
+  background-color: white;
+}
+
+.massage-name{
+  padding: 10px 0 6px 0;
+}
+
+.massage-card{
+  overflow: hidden;
+  width: 200px;
+}
+
+.carousel-container{
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-content{
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 1px 6px 10px 1px rgb(138, 132, 132);
+}
+
+#cover-pic{
+  max-height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+#arrow-left{
+  position: absolute;
+  top: 270px;
+  left: 20px;
+}
+
+#arrow-right{
+  position: absolute;
+  top: 270px;
+  right: 20px;
+}
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut{
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.visible{
+  animation: fadeIn 2s forwards;
+}
+
+.invisible{
+  animation: fadeOut 2s forwards;
+}
+
+#massages-title{
+  color: #faf55a;
+  font-family: "Merriweather", serif; 
+}

@@ -1,0 +1,11 @@
+<div id="massages-content">
+    <div class="massages-list">
+        <h6>Masszázsok</h6>
+        <mat-chip-listbox class="mat-mdc-chip-set-stacked" aria-label="Massages">
+            @for (massage of massageTypes; track $index) {
+              <mat-chip-option color="primary" routerLink='/masszazsok' [queryParams]="{tipus:massage.id}" (selectionChange)="massageSelectionChange(massage)" [selected]="massage.id==activeMassage?.id" >{{massage.name}}</mat-chip-option>
+            }
+          </mat-chip-listbox>
+    </div>
+    <img id="massage-decription" [src]="activeMassage?.leirasUrl" alt="">
+</div>
